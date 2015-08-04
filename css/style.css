@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background: #fff;
+  color: #605F5E;
+}
+
+a {
+  color: #00A3D8;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 1120px;
+}
+@media screen and (max-width: 1200px) {
+  .wrap {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .wrap {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
