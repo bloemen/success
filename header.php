@@ -45,7 +45,7 @@
       endif;
       $logo_wrap = ( is_front_page() || is_home() ) ? 'h1' : 'p' ;
     ?>
-      <<?php echo $logo_wrap; ?> id="logo" itemprop="headline">
+      <<?php echo $logo_wrap; ?> id="logo" itemprop="headline" class="title_website">
         <a href="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a>
       </<?php echo $logo_wrap; ?>>
 

@@ -10,6 +10,26 @@ Version:        0.1.0
 
 @charset "UTF-8";
 
+/**********************************
+  共通部分
+ **********************************/
+
+body a {
+	-webkit-trasition: color 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+/***********************************
+  ヘッダー部
+ ***********************************/
+
 #header {
 	width: 100%;
 	background: -webkit-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
@@ -29,4 +49,25 @@ Version:        0.1.0
 
 .clearfix {
 	clear: both;
+}
+
+.title_website {
+	margin-bottom: 0;
+	padding-top: 34px;
+	font: bold 3.75em/1em 'pt sans narrow', 'trebuchet ms', arial;
+	text-shadow: 0 1em rgba(255,255,255,0,2);
+	font-size: 36px;
+}
+
+.title_website, .title_website a {
+	color: #444;
+}
+
+#header #logo {
+	float: inherit;
+	font-size: inherit;
+}
+
+#logo {
+	margin: inherit;
 }
