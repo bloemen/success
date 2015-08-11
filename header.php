@@ -29,7 +29,7 @@
 
 <?php }else{ ?>
 
-<header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+<header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader" class="header">
   <div class="wrap">
     <?php
       $logo_image = get_option('logo_image');

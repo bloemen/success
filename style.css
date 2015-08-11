@@ -9,3 +9,14 @@ Version:        0.1.0
 */
 
 @charset "UTF-8";
+
+#header {
+	width: 100%;
+	background: -webkit-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	border-bottom: 0;
+	box-shadow: none;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	height: 179px;
+}
