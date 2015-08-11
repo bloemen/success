@@ -46,7 +46,7 @@
       $logo_wrap = ( is_front_page() || is_home() ) ? 'h1' : 'p' ;
     ?>
       <<?php echo $logo_wrap; ?> id="logo" itemprop="headline" class="title_website">
-        <a href="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a>
+        <a href="javascript:void(0)" rel="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a>
       </<?php echo $logo_wrap; ?>>
 
   <?php bzb_header_social_buttons();?>
