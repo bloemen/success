@@ -30,7 +30,7 @@
 <?php }else{ ?>
 
 <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader" class="header">
-  <div class="wrap">
+  <div class="wrap clearfix">
     <?php
       $logo_image = get_option('logo_image');
       $logo_text = get_option('logo_text');
