@@ -36,28 +36,19 @@ img {
 	vertical-align: bottom;
 }
 
-li {
-	list-style: none;
-}
-
 /***********************************
   ヘッダー部
  ***********************************/
 
 #header {
-	width:100%;
-	background:-webkit-gradient(radial,50% 4%,0,50% 4%,120,color-stop(0.39,#2f2300),color-stop(0.00,#4c3901));
-	background:-webkit-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
-	background:-moz-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
-	background:-o-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
-	background:-ms-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
-	background:radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
-	border-bottom:0;
-	box-shadow:none;
-	padding:0;
-	text-align:center;
-	position:relative;
-	height:179px;
+	width: 100%;
+	background: -webkit-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	border-bottom: 0;
+	box-shadow: none;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	height: 179px;
 }
 
 .wrap {
@@ -89,82 +80,4 @@ li {
 
 #logo {
 	margin: inherit;
-}
-
-#header-menu-top {
-	display: none;
-}
-
-#header #header-sns {
-	display: none;
-}
-/***********************************
-  グローバルナヴィゲーション部
- ***********************************/
-
- #gnav {
- 	clear: both;
- 	width: 100%;
- 	padding-top: 20px;
- 	margin-top: inherit;
- 	background: inherit;
- 	border-top: inherit;
- 	border-bottom: inherit;
- 	font-size: inherit;
- }
-
- #gnav ul.list_categories {
- 	display: table;
- 	width: 100%;
- 	font-family: Trajan;
- }
-
- #gnav ul.list_categories li {
- 	display: table-cell;
- 	vertical-align: middle;
- 	text-align: center;
- 	font-weight: bold;
- 	float: inherit;
- 	position: inherit;
- 	padding: inherit;
- }
-
- #gnav ul.list_categories li a {
- 	color: #966f00;
- 	text-shadow: -1px -1px 1px #000;
- 	display: inherit;
- 	border-top: inherit;
- 	margin-top: inherit;
- 	padding: inherit;
- 	background: inherit;
- 	text-decoration: inherit;
- 	transition: inherit;
- }
-
- #gnav ul.list_categories li a:before {
- 	content: "{";
- 	color: transparent;
- 	text-shadow: none;
- 	opacity: 0;
- 	margin-right: 10px;
-    transition: transform 0.3s,opacity 0.2s;
-    -webkit-transition: -webkit-transform 0.3s,opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s,opacity 0.2s;
-    transform: translateX(20px);
-    -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
-}
-
-#gnav ul.list_categories li a:after {
-    content: "}";
-    color: transparent;
-    text-shadow: none;
-    opacity: 0;
-    margin-left: 10px;
-    transition: transform 0.3s,opacity 0.2s;
-    -webkit-transition: -webkit-transform 0.3s,opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s,opacity 0.2s;
-    transform: translateX(-20px);
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
 }
