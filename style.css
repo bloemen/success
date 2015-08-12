@@ -41,14 +41,19 @@ img {
  ***********************************/
 
 #header {
-	width: 100%;
-	background: -webkit-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
-	border-bottom: 0;
-	box-shadow: none;
-	padding: 0;
-	text-align: center;
-	position: relative;
-	height: 179px;
+	width:100%;
+	background:-webkit-gradient(radial,50% 4%,0,50% 4%,120,color-stop(0.39,#2f2300),color-stop(0.00,#4c3901));
+	background:-webkit-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	background:-moz-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	background:-o-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	background:-ms-radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	background:radial-gradient(50% 4%,circle,#4c3901 0%,#2f2300 39%);
+	border-bottom:0;
+	box-shadow:none;
+	padding:0;
+	text-align:center;
+	position:relative;
+	height:179px;
 }
 
 .wrap {
