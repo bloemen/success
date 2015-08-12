@@ -10,6 +10,15 @@
 
 <?php wp_head(); ?>
 
+<script>
+$(function(){
+  $("#header-menu-tog").on("click", function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+  });
+});
+  </script>
+
 <?php echo get_option('analytics_tracking_code');?>
 <?php echo get_option('webmaster_tool');?>
 
