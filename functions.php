@@ -17,7 +17,8 @@ function mnc_wp_enqueue_scripts() {
   wp_enqueue_style( 'chil-main-style', get_stylesheet_uri(), array( 'child-style' ) );
   wp_enqueue_script('jquery-ui-tabs');
   wp_enqueue_script('jquery-easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'));
-
+  wp_enqueue_script('tab', get_stylesheet_directory_uri() . '/js/tab.js', array('jquery'));
+  wp_enqueue_script('smoothScroll', get_stylesheet_directory_uri() . '/js/smoothScroll.js', array());
 }
 add_action( 'wp_enqueue_scripts', 'mnc_wp_enqueue_scripts' );
 
