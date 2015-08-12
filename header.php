@@ -25,7 +25,7 @@ $(function(){
 </head>
 
 <body id="#top" <?php body_class();?> itemschope="itemscope" itemtype="http://schema.org/WebPage">
-
+  <a id="pagetop" name="pagetop"></a>
 <?php bzb_show_facebook_block(); ?>
 
 <?php if( is_singular('lp') ) { ?>
