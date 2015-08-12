@@ -14,18 +14,24 @@ Version:        0.1.0
   共通部分
  **********************************/
 
-body, body.wrapper_body {
-	background: #f9f7f4;
-	font-size: 14px;
-	color: #333;
-	background-image: url("http://rule-of-success.com/wp-content/uploads/2015/06/bg-min.jpg");
-	background-size: cover;
-	background-repeat: repeat-y;
-	font-family: Verdana,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+body,
+body.wrapper_body{
+	background:#f9f7f4;
+	font-size:14px;
+	color:#333;
+	background-image:url("http://rules-of-success.jp/templates/default/images/bg-min.jpg");
+	    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	  background-repeat:repeat-y;
+	font-family:Verdana,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
-body a {
-	-webkit-trasition: color 0.3s;
+body a{
+	transition:color 0.3s;
+	-webkit-transition:color 0.3s;
+	-moz-transition:color 0.3s;
 }
 
 a {
