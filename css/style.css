@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   font-size: 16px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -14,6 +15,27 @@ a {
 .wrap {
   width: 1120px;
 }
+
+.clearfix
+{
+  clear:both;
+}
+
+.clearfix:after
+{
+  content:'';
+  display:block;
+  height:0;
+  clear:both;
+}
+
+.wrapper
+{
+  margin-left:auto;
+  margin-right:auto;
+  width:80em;
+}
+
 @media screen and (max-width: 1200px) {
   .wrap {
     width: auto;

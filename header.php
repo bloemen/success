@@ -39,7 +39,7 @@ $(function(){
 <?php }else{ ?>
 
 <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader" class="header">
-  <section class="wrap clearfix">
+  <section class="wrapper clearfix">
   <div class="box_first">
   <div class="wrapper_metadata">
     <?php
@@ -61,12 +61,12 @@ $(function(){
       </<?php echo $logo_wrap; ?>>
     </div>
     </div>
+  </section>
   <?php bzb_header_social_buttons();?>
 
 <?php if( has_nav_menu( 'global_nav' ) ){ ?>
         <div id="header-menu-tog"> <a href="#"><i class="fa fa-align-justify"></i></a></div>
 <?php }?>
-  </section>
 
 <!-- start global nav  -->
 <!---->

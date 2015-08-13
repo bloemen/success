@@ -11,20 +11,20 @@ Version:        0.1.0
 @charset "UTF-8";
 
 /**********************************
-  共通部分
+  Common Style
  **********************************/
 
 body,
-body.wrapper_body{
+body.wrapper_body {
 	background:#f9f7f4;
 	font-size:14px;
 	color:#333;
-	background-image:url("http://rule-of-success.com/wp-content/uploads/2015/06/bg-min.jpg");
-	-webkit-background-size:cover;
+	background-image:url("http://rules-of-success.jp/templates/default/images/bg-min.jpg");
+	    -webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	background-repeat:repeat-y;
+	  background-repeat:repeat-y;
 	font-family:Verdana,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
@@ -63,8 +63,12 @@ li {
 	clear: both;
 }
 
+.wrapper {
+	width: 1120px;
+}
+
 /***********************************
-  ヘッダー部
+  Header
  ***********************************/
 
 #header {
@@ -81,6 +85,10 @@ li {
 	text-align:center;
 	position:relative;
 	height:179px;
+}
+
+.header .wrapper {
+	width: 1200px;
 }
 
 .title_website {
@@ -318,10 +326,90 @@ margin:0;
 }
 
 /***********************************
-  レスポンシブ
+  Responsive
  ***********************************/
+
+/***** print *****/
+@media print {
+	.bottom, .footer, .header, .navibar, .sidebar {
+		display: none;
+	}
+}
+
+/***** max-width: 1200px *****/
+@media screen and (max-width: 1200px) {
+	.wrapper, .header .wrapper {
+		width: 96%;
+		margin: 0 2%;
+	}
+}
+
+/***** max-width: 1023px *****/
+
+/***** max-width: 768px *****/
+@media screen and (max-width: 768px) {
+
+ #header-menu-tog {
+	display:block;
+	position:absolute;
+	top:13px;
+	right:2%;
+	font-size:30px;
+	z-index:500;
+	color:#fff;
+	 }
+}
+
+/***** max-width: 610px *****/
+
+/***** max-width: 70em *****/
+
+/***** max-width 50em *****/
 @media screen and (max-width:50em)　{
 	.header .box_first {
 		width: 100%;
+	}
+
+	.wrapper_body {
+		min-width: 0;
+	}
+
+	.content,.header .box_first,.sidebar,.navibar,.wrapper
+	{
+		width:100%;
+	}
+
+	.footer,.header .box_last,.list_pagination .item_first,.list_pagination .item_last
+	{
+		display:none;
+	}
+}
+
+/***** max-width: 40em *****/
+
+/***** max-width: 30em *****/
+@media screen and (max-width: 30em) {
+	.header
+	{
+		font-size:0.875em;
+	}
+}
+
+/***** max-width: 29.9999em *****/
+
+/***** max-width: 20em *****/
+
+/***** min-width: 30em *****/
+@media screen and (min-width: 30em) {
+	.wrapper_body {
+		min-width:90em;
+	}
+}
+
+/***** min-width: 100em *****/
+@media screen and (min-width: 100em) {
+	.wrapper
+	{
+		width:90em;
 	}
 }
