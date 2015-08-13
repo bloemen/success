@@ -1,11 +1,11 @@
 jQuery(function($){
     $setElm = $('.wideslider'); //スライドの対象となる要素名
     baseWidth = 398; //スライドさせるコンテンツの幅
-    baseHeight = 241; //スライドさせるコンテンツ高さ
-    minWidth = 320; //コンテンツ要素の最小幅
-    slideSpeed = 1500; //アニメーションスピード
+    baseHeight = 281; //スライドさせるコンテンツ高さ
+    minWidth = 398; //コンテンツ要素の最小幅
+    slideSpeed = 700; //アニメーションスピード
     delayTime = 5000; //アニメーション待機時間
-    easing = 'easeOutBack'; //イージング効果
+    easing = 'linear'; //イージング効果
     autoPlay = '1'; // 自動スライドON/OFF (ON=1,OFF=0)
     flickMove = '1'; // フリック動作ON/OFF (ON=1,OFF=0)
     btnOpacity = 0.5; //左右のNEXT/BACKの透過
