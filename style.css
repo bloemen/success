@@ -216,6 +216,108 @@ li {
 }
 
 /***********************************
+  Attention表示
+ ***********************************/
+
+#top-attention{
+clear:both;
+background:url(images/attention_bg.gif) repeat;
+width:100%;
+position:relative;
+text-align:center;
+padding-bottom:22px;
+}
+#top-attention .wrapper{
+width:auto;
+}
+#top-attention .ttl_bold{
+color:#9d843e;
+font-size:28px;
+text-align:center;
+font-family:Trajan;
+padding-top:43px;
+}
+#top-attention .ttl_s{
+color:#fff;
+font-size:13px;
+text-align:center;
+padding-top:5px;
+}
+#top-attention ul{
+text-align:center;
+margin-top:35px;
+}
+#top-attention ul li{
+margin:0 11px 50px 11px;
+display:inline-block;
+position:relative;
+max-width:258px;
+}
+.main_img_cam{
+z-index:2;
+}
+.cam_cat{
+position:absolute;
+left:0;
+bottom:0;
+z-index:300;
+color:#f3ce19;
+border:1px solid #f3ce19;
+font-size:14px;
+padding:3px 7px 3px 7px;
+font-family:"Times New Roman","游明朝",YuMincho,"Hiragino Mincho ProN",Meiryo,serif;
+transition:transform 0.4s;
+-webkit-transition:-webkit-transform 0.4s;
+-moz-transition:-moz-transform 0.4s;
+}
+a:hover .cam_cat{
+color:#fff;
+background-color:rgba( 243,206,25,0.9 );
+border:1px solid #f3ce19;
+}
+.cam_ttl{
+color:#fff;
+font-size:14px;
+text-align:left;
+padding-top:10px;
+}
+.main_img_cam img{
+width:100%;
+height:auto;
+}
+.nailthumb-container{
+margin:0;
+}
+.thumb_01{
+    width:379px;
+    height:235px;
+}
+.thumb_02{
+    width:145px;
+    height:89px;
+}
+.thumb_03{
+    width:238px;
+    height:137px;
+}
+.thumb_04{
+    width:136px;
+    height:83px;
+}
+.thumb_05{
+    width:258px;
+    height:148px;
+}
+.thumb_06{
+    width:99px;
+    height:99px;
+}
+.thumb_07{
+    width:126px;
+    height:126px;
+}
+
+/***********************************
   レスポンシブ
  ***********************************/
 @media screen and (max-width:50em)　{

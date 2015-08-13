@@ -129,7 +129,7 @@ audio:not([controls]) {
  }
 
 .mainList li a,
-.attention ul li a,
+#top-attention ul li a,
 #content .top_list_stock .article-inner a,
 .tags_list .list_category li a,
 .category_page #content .category_list_stock a{
@@ -142,7 +142,7 @@ transition:filter 0.8s;
 display:block;
 }
 .mainList li a:hover,
-.attention ul li a:hover,
+#top-attention ul li a:hover,
 #content .top_list_stock .article-inner a:hover,
 .tags_list .list_category li a:hover,
 .category_page #content .category_list_stock a:hover{
