@@ -195,6 +195,27 @@ li {
 }
 
 /***********************************
+  メッセージ表示
+ ***********************************/
+#top-slide{
+	background:url(images/logo_r.gif) no-repeat center bottom;
+	text-align:center;
+	padding:0 16.5%;
+}
+#top-slide .ex_ttl{
+	font-family:"Times New Roman","游明朝",YuMincho,"Hiragino Mincho ProN",Meiryo,serif;
+	font-size:24px;
+	font-weight:bold;
+	padding-top:32px;
+}
+#top-slide .ex_content{
+	color:#1a0a01;
+	font-size:13px;
+	padding-top:16px;
+	padding-bottom:50px;
+}
+
+/***********************************
   レスポンシブ
  ***********************************/
 @media screen and (max-width:50em)　{

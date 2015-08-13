@@ -9,7 +9,7 @@
   <div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 
-    <div class="main-inner">
+
 
         <?php echo get_template_part('top','message'); ?>
         <?php echo get_template_part('top','attention'); ?>
@@ -18,7 +18,6 @@
         <?php echo get_template_part('top','category'); ?>
         <?php echo get_template_part('top','sns'); ?>
 
-    </div><!-- /main-inner -->
 
   </div><!-- /main -->
   
