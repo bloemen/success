@@ -111,6 +111,10 @@ audio:not([controls]) {
  	word-break: unset;
  }
 
+ body.home #content {
+ 	padding-top: 0;
+ }
+
  a {
  	-webkit-transition: unset;
  	transition: unset;
