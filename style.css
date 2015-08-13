@@ -19,12 +19,12 @@ body.wrapper_body{
 	background:#f9f7f4;
 	font-size:14px;
 	color:#333;
-	background-image:url("http://rules-of-success.jp/templates/default/images/bg-min.jpg");
-	    -webkit-background-size:cover;
+	background-image:url("http://rule-of-success.com/wp-content/uploads/2015/06/bg-min.jpg");
+	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	  background-repeat:repeat-y;
+	background-repeat:repeat-y;
 	font-family:Verdana,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
@@ -40,6 +40,27 @@ a {
 
 img {
 	vertical-align: bottom;
+}
+
+li {
+	list-style: none;
+}
+
+.wrap {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0px;
+	clear: both;
 }
 
 /***********************************
@@ -62,16 +83,6 @@ img {
 	height:179px;
 }
 
-.wrap {
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.clearfix {
-	clear: both;
-}
-
 .title_website {
 	margin-bottom: 0;
 	padding-top: 34px;
@@ -85,10 +96,109 @@ img {
 }
 
 #header #logo {
-	float: inherit;
-	font-size: inherit;
+	float: unset;
+	font-size: unset;
 }
 
 #logo {
-	margin: inherit;
+	margin: unset;
+}
+
+#header-menu-top {
+	display: none;
+}
+
+#header #header-sns {
+	display: none;
+}
+
+/***********************************
+  グローバルナヴィゲーション部
+ ***********************************/
+
+ #gnav {
+ 	clear: both;
+ 	width: 100%;
+ 	padding-top: 26px;
+ 	margin-top: unset;
+ 	background: unset;
+ 	border-top: unset;
+ 	border-bottom: unset;
+ }
+
+ #gnav li {
+ 	float: unset;
+ 	position: unset;
+ 	padding: 0;
+ }
+
+ #gnav ul.list_categories {
+ 	display: table;
+ 	width: 100%;
+ 	font-family: Trajan;
+ }
+
+ #gnav ul.list_categories li {
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	text-align: center;
+ 	font-weight: bold;
+ }
+
+ #gnav ul.list_categories li a {
+ 	color: #966f00;
+ 	text-shadow: -1px -1px 1px #000;
+ 	display: unset;
+ 	margin-top: unset;
+ 	border-top: unset;
+ 	padding: unset;
+ 	background: unset;
+ 	text-decoration: unset;
+ 	text-decoration: unset;
+ 	transition: unset;
+ }
+
+ #gnav ul.list_categories li a:before {
+ 	content: "{";
+ 	color: transparent;
+ 	text-shadow: none;
+ 	opacity: 0;
+ 	margin-right: 10px;
+    transition: transform 0.3s,opacity 0.2s;
+    -webkit-transition: -webkit-transform 0.3s,opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s,opacity 0.2s;
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+}
+
+#gnav ul.list_categories li a:after {
+    content: "}";
+    color: transparent;
+    text-shadow: none;
+    opacity: 0;
+    margin-left: 10px;
+    transition: transform 0.3s,opacity 0.2s;
+    -webkit-transition: -webkit-transform 0.3s,opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s,opacity 0.2s;
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+}
+#gnav ul.list_categories li a:hover::before,
+#gnav ul.list_categories li a:hover::after {
+	color: #966f00;
+	opacity:1;
+	transform:translateX(0px);
+	-webkit-transform:translateX(0px);
+	-moz-transform:translateX(0px);
+}
+
+/***********************************
+  レスポンシブ
+ ***********************************/
+@media screen and (max-width:50em)　{
+	.header .box_first {
+		width: 100%;
+	}
 }

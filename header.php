@@ -39,7 +39,9 @@ $(function(){
 <?php }else{ ?>
 
 <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader" class="header">
-  <div class="wrap clearfix">
+  <section class="wrap clearfix">
+  <div class="box_first">
+  <div class="wrapper_metadata">
     <?php
       $logo_image = get_option('logo_image');
       $logo_text = get_option('logo_text');
@@ -57,33 +59,35 @@ $(function(){
       <<?php echo $logo_wrap; ?> id="logo" itemprop="headline" class="title_website">
         <a href="javascript:void(0)" rel="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a>
       </<?php echo $logo_wrap; ?>>
-
+    </div>
+    </div>
   <?php bzb_header_social_buttons();?>
 
 <?php if( has_nav_menu( 'global_nav' ) ){ ?>
         <div id="header-menu-tog"> <a href="#"><i class="fa fa-align-justify"></i></a></div>
 <?php }?>
-  </div>
-</header>
+  </section>
 
 <!-- start global nav  -->
 <!---->
 <?php if( has_nav_menu( 'global_nav' ) ){ ?>
-<nav id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
-  <div class="wrap">
+<div id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+  <div class="wrap clearfix">
+  <ul>
   <?php
     wp_nav_menu(
       array(
         'theme_location'  => 'global_nav',
-        'menu_class'      => 'clearfix',
-        'menu_id'         => 'gnav-ul',
-        'container'       => 'div',
-        'container_id'    => 'gnav-container',
-        'container_class' => 'gnav-container'
+        'menu_class'      => 'list_categories',
+        'menu_id'         => '',
+        'container'       => 'ul',
+        'container_id'    => '',
+        'container_class' => ''
       )
     );?>
+  </ul>
     </div>
-</nav>
+</div>
 <?php } ?>
-
+  </header>
 <?php } // if is_singular('lp') ?>
