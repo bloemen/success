@@ -280,6 +280,41 @@ body.home #content
             filter: none;
 }
 
+.bottom
+{
+    padding: 2em 0;
+
+    text-align: center;
+
+    text-shadow: 0 1px rgba(255,255,255,.8);
+}
+.bottom,
+.bottom a
+{
+    color: #999;
+}
+.bottom a:hover
+{
+    text-decoration: underline;
+}
+
+
+.footer
+{
+    margin-top: 5em;
+    padding: 2.5em 0;
+
+    border: solid #a5a5a5;
+    border-width: 1px 0;
+    background: #b9b9b9;
+    background: linear-gradient(#ccc,#b9b9b9);
+    box-shadow: 0 4px 4px rgba(0,0,0,.05);
+}
+
+#footer a
+{
+    color: unset;
+}
 /**********************
   Global Navigation (Xeory unset)
  **********************/
@@ -330,13 +365,14 @@ body.home #content
  *********************/
 .sidebar .box_extra
 {
-background:#eee;
-border-radius:0 0 0.125em 0.125em;
-    padding:1em 1.5em;
+    padding: 1em 1.5em;
+
+    border-radius: 0 0 .125em .125em;
+    background: #eee;
 }
 .sidebar .box_extra a
 {
-text-decoration:underline;
+    text-decoration: underline;
 }
 
 .grid,

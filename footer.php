@@ -1,32 +1,50 @@
-<footer id="footer">
+<!-- fotter -->
+<footer id="footer" class="footer">
+<div class="footer_inner">
+<section class="wrapper clearfix">
+<div class="pagetop"><a href="#pagetop">PAGETOP</a></div>
+<div class="f_logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/logo_f.png" width="306" height="155" alt="成功の法則" /></div>
 <?php if( has_nav_menu( 'footer_nav' ) ){ ?>
-  <div class="footer-01">
-    <div class="wrap">
         <?php
         wp_nav_menu(
           array(
             'theme_location'  => 'footer_nav',
-            'menu_class'      => '',
-            'menu_id'         => 'fnav',
-            'container'       => 'nav',
-            'items_wrap'      => '<ul id="footer-nav" class="%2$s">%3$s</ul>'
+            'menu_class'      => 'list_categories',
+            'menu_id'         => '',
+            'container'       => 'ul',
+            'container_id'      => '',
+            'container_class' => ''
           )
-        );?>
+          ); ?>
+        <ul style="display: none;">
+   <?php
+        wp_nav_menu(
+          array(
+            'theme_location'  => 'footer_nav',
+            'menu_class'      => 'list_categories',
+            'menu_id'         => '',
+            'container'       => 'ul',
+            'container_id'      => '',
+            'container_class' => ''
+          )
+
+         );?>
+         </ul>
+         </section>
     </div><!-- /wrap -->
-  </div><!-- /footer-01 -->
+  </footer><!-- /footer-01 -->
 <?php } //if footer_nav ?>
-  <div class="footer-02">
-    <div class="wrap">
-      <p class="footer-copy">
+
+<!-- bottom -->
+
+  <div  id="bottom" class="bottom">
+    <section class="wrapper" sytle="">
         © Copyright <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?>. All rights reserved.
-      </p>
-    </div><!-- /wrap -->
+    </section><!-- /wrap -->
   </div><!-- /footer-02 -->
   <?php
   // }
   ?>
-</footer>
-<a href="#" class="pagetop"><span><i class="fa fa-angle-up"></i></span></a>
 <?php wp_footer(); ?>
 <script>
 (function($){
