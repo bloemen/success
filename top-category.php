@@ -1,4 +1,3 @@
-<div class="wrapper clearfix">
 <div id="top-cateogry">
 <article id="content_category_block">
   <?php echo show_category(5); ?>
@@ -7,7 +6,7 @@
   <?php echo show_category(4); ?>
   </article>
 </div>
-</div>
+
 
 
 <?php

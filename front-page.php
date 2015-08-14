@@ -8,8 +8,10 @@
     </article>
         <?php echo get_template_part('top','newposts'); ?>
         <?php echo get_template_part('top','freedownload'); ?>
+    <div class="wrapper clearfix">
         <?php echo get_template_part('top','category'); ?>
         <?php echo get_template_part('top','sns'); ?>
+    </div>
   </div><!-- /main -->
   
 
