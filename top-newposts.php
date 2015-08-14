@@ -40,7 +40,7 @@
         <!-- 更新ボックス -->
         <?php endwhile;?>
         <?php wp_reset_query();?>
-        <div class="more_btn"><a href="home/2" rel="next">他の新着記事を読む</a></div>
+        <div class="more_btn"><a href="newposts" rel="next">他の新着記事を読む</a></div>
 </div>
 
 </article>

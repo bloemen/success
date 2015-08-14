@@ -262,7 +262,8 @@ body.home #content
 #top-attention ul li a,
 #content .top_list_stock .article-inner a,
 .tags_list .list_category li a,
-.category #content .category_list_stock a
+.category #content .category_list_stock a,
+.page-template-newposts #content .category_list_stock a
 {
     display: block;
 
@@ -278,7 +279,8 @@ body.home #content
 #top-attention ul li a:hover,
 #content .top_list_stock .article-inner a:hover,
 .tags_list .list_category li a:hover,
-.category #content .category_list_stock a:hover
+.category #content .category_list_stock a:hover,
+.page-template-newposts #content .category_list_stock a:hover
 {
     -webkit-filter: grayscale(0%);
             filter: none;

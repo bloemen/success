@@ -1304,6 +1304,20 @@ body.category .content
 }
 
 /***********************************
+  Newposts.php
+  ***********************************/
+
+  body.page-template-newposts
+{
+    background-size: cover;
+}
+
+body.page-template-newposts .content
+{
+    width: 100%;
+}
+
+/***********************************
   Responsive
  ***********************************/
 
