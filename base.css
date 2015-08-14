@@ -179,11 +179,38 @@ filter:none;
 }
 
 /**********************
-  グローバルナビ
+  Global Navigation (Xeory unset)
  **********************/
+#gnav {
+  margin-top: unset;
+  background: unset;
+  border-top: unset;
+  border-bottom: unset;
+  font-size: unset;
+}
 
-#gnavi li a {
-	all:unset;
+#gnav ul {
+	margin: unset;
+	padding: unset;
+}
+
+#gnav li {
+	float: unset;
+	position: unset;
+	padding: unset;
+}
+
+#gnav li a {
+	display: unset;
+	border-top: unset;
+	margin-top: unset;
+	padding: unset;
+	background: unset;
+	color: unset;
+	text-decoration: unset;
+	  -webkit-transition: unset;
+          transition: unset;
+
 }
 
 /**********************

@@ -72,7 +72,22 @@ $(function(){
 <!---->
 <?php if( has_nav_menu( 'global_nav' ) ){ ?>
 <div id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
-  <div class="wrap clearfix">
+  <section class="wrapper clearfix" style="display:none">
+  <ul>
+  <?php
+    wp_nav_menu(
+      array(
+        'theme_location'  => 'global_nav',
+        'menu_class'      => 'list_categories',
+        'menu_id'         => '',
+        'container'       => 'ul',
+        'container_id'    => '',
+        'container_class' => ''
+      )
+    );?>  
+  </ul>
+  </section>
+  <section class="wrapper clearfix">
   <ul>
   <?php
     wp_nav_menu(
@@ -86,7 +101,7 @@ $(function(){
       )
     );?>
   </ul>
-    </div>
+    </section>
 </div>
 <?php } ?>
   </header>
