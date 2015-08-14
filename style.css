@@ -46,6 +46,16 @@ li {
 	list-style: none;
 }
 
+a
+{
+	color:#555;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#444;
+}
+
 .wrap {
 	width: 1200px;
 	margin-left: auto;
@@ -354,6 +364,19 @@ margin:0;
  	}
 	#gnav li{
 		float:none;
+	}
+
+	.mainList li a,
+  #top-attention ul li a,
+  #content .top_list_stock .article-inner a,
+  .tags_list .list_category li a,
+  .category_page #content .category_list_stock a{
+    -webkit-filter:grayscale(0%);
+		filter:none;
+ 	}
+
+ 	#top-attention ul li{
+	margin:0 11px 20px 11px;
 	}
 }
 
