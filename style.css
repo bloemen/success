@@ -1179,21 +1179,28 @@ ul#f_navi li
   PageTop
   ***********************************/
 
-  .pagetop{
-background-image:url(images/icon_pagetop.png);
-background-repeat:no-repeat;
-background-size:28px 14px;
-background-color:#4e4833;
-background-position:15px 19px;
-line-height:0;
-text-indent:-9999px;
-float:right;
-margin:-128px -57px 0 0;
+.pagetop
+{
+    line-height: 0;
+
+    float: right;
+
+    margin: -128px -57px 0 0;
+
+    text-indent: -9999px;
+
+    background-color: #4e4833;
+    background-image: url(images/icon_pagetop.png);
+    background-repeat: no-repeat;
+    background-position: 15px 19px;
+    background-size: 28px 14px;
 }
-.pagetop a{
-display:block;
-width:57px;
-height:55px;
+.pagetop a
+{
+    display: block;
+
+    width: 57px;
+    height: 55px;
 }
 
 
@@ -1233,6 +1240,20 @@ height:55px;
     #message_block .message_btn a
     {
         width: 35%;
+    }
+
+    ul.list_category
+    {
+        padding: 2%;
+    }
+    .pagetop
+    {
+        margin: -128px 0 0 0;
+    }
+    .thumb_05
+    {
+        width: 240px;
+        height: 138px;
     }
 }
 
@@ -1278,6 +1299,12 @@ height:55px;
         height: auto;
 
         object-fit: cover;
+    }
+
+    .grid,
+    .grid_space
+    {
+        float: none;
     }
 }
 
@@ -1440,10 +1467,62 @@ height:55px;
         width: 100%;
         margin: 0 0 10px;
     }
+
+    .article-inner
+    {
+        border: 0;
+    }
+
+    .thumb_03
+    {
+        width: 100%;
+        height: 178px;
+    }
+    .thumb_05 img
+    {
+        overflow: hidden;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .description
+    {
+        padding: 0 5%;
+    }
+
+    .category_list_stock dl
+    {
+        float: none;
+
+        width: 100%;
+        margin: 50px 0;
+    }
 }
 
 /***** max-width: 610px *****/
+@media screen and (max-width:610px)
+{
+    ul.list_category li
+    {
+        float: none;
 
+        width: 90%;
+        margin: 5%;
+    }
+    .thumb_03
+    {
+        width: 100%;
+        height: 178px;
+    }
+    .thumb_05
+    {
+        width: 100%;
+        height: 148px;
+    }
+}
 /***** max-width: 70em *****/
 
 /***** max-width 50em *****/
