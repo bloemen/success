@@ -1203,6 +1203,105 @@ ul#f_navi li
     height: 55px;
 }
 
+/***********************************
+  Category.php
+ ***********************************/
+body.category
+{
+    background-size: cover;
+}
+
+body.category .content
+{
+    width: 100%;
+}
+
+.category_list_stock
+{
+    text-align: center;
+}
+.category_list_stock .wrapper
+{
+    padding: 0 2.41%;
+}
+#category_title
+{
+    font-family: 'Times New Roman','游明朝',YuMincho,'Hiragino Mincho ProN',Meiryo,serif;
+    font-size: 30px;
+    font-weight: normal !important;
+    font-weight: bold;
+
+    margin-top: 36px;
+
+    text-align: center;
+
+    color: #2f2300;
+}
+.category_list_stock dl
+{
+    position: relative;
+
+    display: block;
+    float: left;
+
+    width: 22.5%;
+    margin: 35px 1.25% 0;
+
+    text-align: left;
+}
+.category_list_stock dl dt
+{
+    position: relative;
+    z-index: 2;
+}
+.category_list_stock dl dt .top_list_img
+{
+    overflow: hidden;
+
+    width: 261px;
+    height: 150px;
+
+    object-fit: cover;
+}
+.category_list_stock dl dt .top_list_img img
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+.category_list_stock dl dt .top_list_cate
+{
+    font-family: 'Times New Roman','游明朝',YuMincho,'Hiragino Mincho ProN',Meiryo,serif;
+    font-size: 13px;
+
+    position: absolute;
+    z-index: 300;
+    bottom: 0;
+    left: 0;
+
+    padding: 3px 7px 2px 7px;
+
+    color: #f3ce19;
+    border: 1px solid #f3ce19;
+}
+.category_list_stock  a:hover dl dt .top_list_cate
+{
+    color: #fff;
+    border: 1px solid #f3ce19;
+    background-color: rgba( 243,206,25,.9 );
+}
+.category_list_stock dl dd h2.cate_ttl
+{
+    font-size: 14px !important;
+    font-weight: bold;
+
+    padding-top: 10px;
+
+    color: #333;
+}
 
 /***********************************
   Responsive
@@ -1427,8 +1526,9 @@ ul#f_navi li
         color: #fff;
     }
 
-    #header-menu-tog a {
-    	color: #fff;
+    #header-menu-tog a
+    {
+        color: #fff;
     }
 
     #gnav .wrapper
