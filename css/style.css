@@ -209,3 +209,11 @@ display:none;
   display: inline-block;
   overflow: hidden;
 }
+
+#content:after {
+  content:"";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
