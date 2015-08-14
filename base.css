@@ -253,6 +253,11 @@ body.home #content
     padding-top: 0;
 }
 
+.wrapper_body
+{
+    min-width: 80em;
+}
+
 .mainList li a,
 #top-attention ul li a,
 #content .top_list_stock .article-inner a,
@@ -358,6 +363,178 @@ body.home #content
     color: unset;
     border-top: unset;
     background: unset;
+}
+
+/* ----------------------------------------
+* レスポンシブ
+* ~ / 1200px / 991px / 767px 
+* desctop / laptop / tablet / phone
+---------------------------------------- */
+@media screen and (max-width: 1200px)
+{
+    /* laptop */
+    .wrap,
+    .one-column #content .wrap
+    {
+        width: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .main-inner
+    {
+        box-sizing: border-box;
+        margin-right: 320px;
+    }
+
+    /* laptop end */
+}
+@media screen and (max-width: 991px)
+{
+    /* tablet */
+    .wrap,
+    .one-column #content .wrap
+    {
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    #main,
+    .main-inner,
+    #side
+    {
+        float: unset;
+
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .left-content #main,
+    .right-content #main
+    {
+        float: unset;
+    }
+    .left-content .main-inner,
+    .right-content .main-inner
+    {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+    .left-content #side,
+    .right-content #side
+    {
+        float: unset;
+
+        width: unset;
+        margin: unset;
+    }
+
+    #side
+    {
+        padding-top: unset;
+    }
+
+    #header
+    {
+        padding: unset !important;
+    }
+
+ #header-menu-tog {
+    display: unset;
+    float: unset;
+    font-size: unset;
+  }
+
+  #gnav {
+    display: unset;
+  }
+  #gnav.active {
+    display: unset;
+  }
+
+  #gnav {
+    margin: unset;
+    border: unset;
+    padding: unset;
+  }
+  #gnav .wrap {
+    margin: unset;
+  }
+  #gnav ul li {
+    float: unset;
+    position: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    padding: unset;
+  }
+  #gnav ul li.current-menu-item a {
+    border-top: unset;
+    background: unset;
+  }
+  #gnav ul li a {
+    display: unset;
+    border-top: unset;
+    padding: unset;
+    color: unset;
+    background: unset;
+    text-decoration: unset;
+    -webkit-transition: unset;
+            transition: unset;
+    border-bottom: unset;
+  }
+  #gnav ul li a:hover {
+    color: unset;
+    border-top: unset;
+  }
+  #gnav ul li a:hover .sub-menu {
+    display: unset;
+  }
+  #gnav ul li .sub-menu {
+    display: unset;
+    position: unset;
+    width: unset;
+    margin-left: unset;
+    background: unset;
+    border: unset;
+    border-bottom: unset;
+  }
+  #gnav ul li .sub-menu li {
+    float: unset;
+    margin-right: unset;
+  }
+  #gnav ul li .sub-menu li:list-child {
+    border-bottom: unset;
+  }
+  #gnav ul li .sub-menu li a {
+    color: unset;
+    background: unset;
+    padding: unset;
+    border-bottom: unset;
+  }
+  #gnav ul li .sub-menu li a:hover {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+  }
+  #gnav ul li .sub-menu .sub-menu {
+    left: unset;
+    top: unset;
+  }
+    /* tablet end */
+}
+@media screen and (max-width: 767px)
+{
+    /* phone */
+    .wrap,
+    .one-column #content .wrap
+    {
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    /* phone end */
 }
 
 /*********************

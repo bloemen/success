@@ -11,11 +11,14 @@
 <?php wp_head(); ?>
 
 <script>
+jQuery(function($){
+
 $(function(){
   $("#header-menu-tog").on("click", function(){
     $(this).next().slideToggle();
     $(this).toggleClass("active");
   });
+});
 });
   </script>
 
