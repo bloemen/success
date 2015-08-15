@@ -367,6 +367,10 @@ body.home #content
     background: unset;
 }
 
+#gnav li a:hover {
+	border: unset;
+}
+
 /* ----------------------------------------
 * レスポンシブ
 * ~ / 1200px / 991px / 767px 
