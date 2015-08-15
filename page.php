@@ -72,11 +72,6 @@
 </div>
 </article>
 
-    <article id="related_block" class="">
-<div class="wrapper clearfix">
-  <h4 class='related_ttl'><span>Related Post</span></h4><div class='related_post'>
-  <!-- Here is Related Post (not discovery function) -->
-  </div></div></article>
 
 <div class="wrapper clearfix">
 <?php echo get_template_part('top','sns'); ?>

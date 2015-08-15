@@ -46,7 +46,7 @@
 
 <div class="article-inner"><div class="box_content">
         <?php the_content(); ?>
-        <?php bzb_social_buttons(true); ?>
+        <?php bzb_social_buttons(); ?>
 <!-- Here is the Social big share buttons (not discovery function)  -->
 </div>
 </div>
@@ -74,9 +74,18 @@
 
     <article id="related_block" class="">
 <div class="wrapper clearfix">
-  <h4 class='related_ttl'><span>Related Post</span></h4><div class='related_post'>
-  <!-- Here is Related Post (not discovery function) -->
+  <?php
+    $ids = "";
+                    if(is_array(get_post_meta($post->ID,'bzb_related', true) )){
+                        $ids = implode( get_post_meta($post->ID,'bzb_related', true) , ',');
+                    }
+                    echo do_shortcode( '[related_post themes="flat" id="'.get_the_ID().' ids="' . $ids . '"]' ); 
+?>
+
   </div></div></article>
+
+
+
 
 <div class="wrapper clearfix">
 <?php echo get_template_part('top','sns'); ?>
