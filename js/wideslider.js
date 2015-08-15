@@ -68,7 +68,7 @@ jQuery(function($){
  
                 setWidth = findList.find('img').width();
                 setHeight = findList.find('img').height();
-                baseWrapWidth = (setWidth)*(baseListCount);
+                baseWrapWidth = ((setWidth)+1)*(baseListCount);
  
                 ulCount = findWrap.find('ul').length;
                 if(ulCount == 1){
@@ -81,7 +81,7 @@ jQuery(function($){
  
                     allListCount = findWrap.find('li').length;
                 }
-                allLWrapWidth = (setWidth)*(allListCount),
+                allLWrapWidth = ((setWidth)+1)*(allListCount),
                 posAdjust = ((windowWidth)-(setWidth))/2;
  
                 findBase.css({left:(posAdjust),width:(setWidth),height:(setHeight)});
