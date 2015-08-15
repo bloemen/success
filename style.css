@@ -2018,7 +2018,7 @@ border:1px solid #f3ce19;
 {
     .wrapper_body
     {
-        min-width: 90em;
+        /*min-width: 90em;*/
     }
 }
 
@@ -2043,7 +2043,7 @@ border:1px solid #f3ce19;
 {
     .wrapper_body
     {
-        min-width: 0; 
+        /*min-width: 0; */
 
     }
 }
