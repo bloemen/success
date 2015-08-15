@@ -322,6 +322,10 @@ body.home #content
 {
     color: unset;
 }
+
+a:hover {
+	text-decoration: none;
+}
 /**********************
   Global Navigation (Xeory unset)
  **********************/
