@@ -323,8 +323,24 @@ body.home #content
     color: unset;
 }
 
-a:hover {
-	text-decoration: none;
+a:hover
+{
+    text-decoration: none;
+}
+
+.breadcrumb li
+{
+    /*margin-left: unset;*/
+    line-height: unset;
+
+    float: unset;
+}
+
+.breadcrumb
+{
+    line-height: normal;
+
+    margin-bottom: unset;
 }
 /**********************
   Global Navigation (Xeory unset)
@@ -371,8 +387,9 @@ a:hover {
     background: unset;
 }
 
-#gnav li a:hover {
-	border: unset;
+#gnav li a:hover
+{
+    border: unset;
 }
 
 /* ----------------------------------------
@@ -451,87 +468,115 @@ a:hover {
         padding: unset !important;
     }
 
- #header-menu-tog {
-    display: unset;
-    float: unset;
-    font-size: unset;
-  }
+    #header-menu-tog
+    {
+        font-size: unset;
 
-  #gnav {
-    display: unset;
-  }
-  #gnav.active {
-    display: unset;
-  }
+        display: unset;
+        float: unset;
+    }
 
-  #gnav {
-    margin: unset;
-    border: unset;
-    padding: unset;
-  }
-  #gnav .wrap {
-    margin: unset;
-  }
-  #gnav ul li {
-    float: unset;
-    position: unset;
-    margin-right: unset;
-    margin-bottom: unset;
-    padding: unset;
-  }
-  #gnav ul li.current-menu-item a {
-    border-top: unset;
-    background: unset;
-  }
-  #gnav ul li a {
-    display: unset;
-    border-top: unset;
-    padding: unset;
-    color: unset;
-    background: unset;
-    text-decoration: unset;
-    -webkit-transition: unset;
-            transition: unset;
-    border-bottom: unset;
-  }
-  #gnav ul li a:hover {
-    color: unset;
-    border-top: unset;
-  }
-  #gnav ul li a:hover .sub-menu {
-    display: unset;
-  }
-  #gnav ul li .sub-menu {
-    display: unset;
-    position: unset;
-    width: unset;
-    margin-left: unset;
-    background: unset;
-    border: unset;
-    border-bottom: unset;
-  }
-  #gnav ul li .sub-menu li {
-    float: unset;
-    margin-right: unset;
-  }
-  #gnav ul li .sub-menu li:list-child {
-    border-bottom: unset;
-  }
-  #gnav ul li .sub-menu li a {
-    color: unset;
-    background: unset;
-    padding: unset;
-    border-bottom: unset;
-  }
-  #gnav ul li .sub-menu li a:hover {
-    background: unset;
-    color: unset;
-    box-shadow: unset;
-  }
-  #gnav ul li .sub-menu .sub-menu {
-    left: unset;
-    top: unset;
-  }
+    #gnav
+    {
+        display: unset;
+    }
+    #gnav.active
+    {
+        display: unset;
+    }
+
+    #gnav
+    {
+        margin: unset;
+        padding: unset;
+
+        border: unset;
+    }
+    #gnav .wrap
+    {
+        margin: unset;
+    }
+    #gnav ul li
+    {
+        position: unset;
+
+        float: unset;
+
+        margin-right: unset;
+        margin-bottom: unset;
+        padding: unset;
+    }
+    #gnav ul li.current-menu-item a
+    {
+        border-top: unset;
+        background: unset;
+    }
+    #gnav ul li a
+    {
+        display: unset;
+
+        padding: unset;
+
+        -webkit-transition: unset;
+                transition: unset;
+        text-decoration: unset;
+
+        color: unset;
+        border-top: unset;
+        border-bottom: unset;
+        background: unset;
+    }
+    #gnav ul li a:hover
+    {
+        color: unset;
+        border-top: unset;
+    }
+    #gnav ul li a:hover .sub-menu
+    {
+        display: unset;
+    }
+    #gnav ul li .sub-menu
+    {
+        position: unset;
+
+        display: unset;
+
+        width: unset;
+        margin-left: unset;
+
+        border: unset;
+        border-bottom: unset;
+        background: unset;
+    }
+    #gnav ul li .sub-menu li
+    {
+        float: unset;
+
+        margin-right: unset;
+    }
+    #gnav ul li .sub-menu li:list-child
+    {
+        border-bottom: unset;
+    }
+    #gnav ul li .sub-menu li a
+    {
+        padding: unset;
+
+        color: unset;
+        border-bottom: unset;
+        background: unset;
+    }
+    #gnav ul li .sub-menu li a:hover
+    {
+        color: unset;
+        background: unset;
+        box-shadow: unset;
+    }
+    #gnav ul li .sub-menu .sub-menu
+    {
+        top: unset;
+        left: unset;
+    }
     /* tablet end */
 }
 @media screen and (max-width: 767px)

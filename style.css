@@ -1886,8 +1886,38 @@ body.page-template-newposts .content
     padding-top: 4px;
 }
 
+ol.breadcrumb {
+    width: 100%;
+    background: none;
+    font-size: 10px;
+    color: #555;
+    text-shadow: none;
+    border-radius: 0;
+    padding:17px 0;
+}
+
+ol.breadcrumb, ol.breadcrumb a {
+    /*color: #fff;*/
+}
+
+ol.breadcrumb a {
+    margin-right: 10px;
+}
+
+ol.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+ol.breadcrumb li {
+    display: inline-block;
+}
+
 ol.breadcrumb li:first-child {
 	display: none;
+}
+
+ol.breadcrumb li:nth-child(2) {
+    margin-left: 0;
 }
 
 ol.breadcrumb li i {
