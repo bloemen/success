@@ -392,6 +392,10 @@ a:hover
     border: unset;
 }
 
+#gnav li.current-menu-item a {
+    border-top: unset;
+}
+
 /* ----------------------------------------
 * レスポンシブ
 * ~ / 1200px / 991px / 767px 
