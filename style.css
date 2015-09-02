@@ -24,10 +24,10 @@ body.wrapper_body
     background: #f9f7f4;
     background-image: url('http://rules-of-success.jp/templates/default/images/bg-min.jpg');
     background-repeat: repeat-y;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
 }
 
 body a
@@ -728,6 +728,54 @@ body.category_page .sidebar
     padding: 11px;
 }
 
+/*-- サイド 人気記事 --*/
+.sidebar .side-widget-inner{
+    margin-top:23px;
+}
+.sidebar .side-widget-inner h4{
+    font-family: Trajan;
+    font-size: 22px;
+    color: #383a3a;
+    margin-top: 46px;
+    margin-bottom: 24px;
+}
+#analytics_tab ul.change_tab{
+}
+#analytics_tab ul.change_tab li{
+    background: #fff;
+    color: #323232;
+    padding: 8px 0 6px;
+    font-size:12px;
+    font-family:Trajan;
+    border-top:1px solid #efeeec;
+    border-right:1px solid #efeeec;
+    border-bottom:1px solid #efeeec;
+}
+#analytics_tab ul.change_tab li:nth-child(2) {
+  border-right: none;
+  border-left: none;
+}
+#analytics_tab ul.change_tab li:hover{
+    opacity: 0.8;
+}
+#analytics_tab ul.change_tab li.select {
+    background-color:#413100;
+    color: #fff;
+    position:relative;
+    z-index:20;
+}
+#analytics_tab ul.change_tab li.select:after{
+pointer-events:none;
+border-color:rgba(65,49,0,0);
+border-top-color:#413100;
+}
+
+#analytics_tab ul.content_wrap li {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0 0;
+}
+
+
 .grid_space > a,
 .grid_space > blockquote,
 .grid_space > button,
@@ -1329,6 +1377,8 @@ body.page-template-newposts .content
 
     background: #222;
     background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 #under_global_menu:after
 {
@@ -1464,6 +1514,8 @@ body.page-template-newposts .content
     color: #383a3a;
     border-top: 4px solid #c5a900;
     background: #fff;
+
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 .box_content p
 {

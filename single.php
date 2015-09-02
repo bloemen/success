@@ -66,11 +66,7 @@
 </aside>
 </div>
 
-<article id="message_block" class="">
-<div class="wrapper clearfix">
-<?php echo bzb_get_cta($post->ID); ?>
-</div>
-</article>
+<?php echo get_template_part('top','freedownload'); ?>
 
     <article id="related_block" class="">
 <div class="wrapper clearfix">
