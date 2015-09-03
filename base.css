@@ -263,7 +263,8 @@ body.home #content
 #content .top_list_stock .article-inner a,
 .tags_list .list_category li a,
 .category #content .category_list_stock a,
-.page-template-newposts #content .category_list_stock a
+.page-template-newposts #content .category_list_stock a,
+.single-post #related_block .gr3 a 
 {
     display: block;
 
@@ -280,7 +281,8 @@ body.home #content
 #content .top_list_stock .article-inner a:hover,
 .tags_list .list_category li a:hover,
 .category #content .category_list_stock a:hover,
-.page-template-newposts #content .category_list_stock a:hover
+.page-template-newposts #content .category_list_stock a:hover,
+.single-post #related_block .gr3 a:hover
 {
     -webkit-filter: grayscale(0%);
             filter: none;
