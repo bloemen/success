@@ -2596,6 +2596,15 @@ border:1px solid #f3ce19;
     #analytics_tab ul.change_tab li span {
         font-size: 16px !important;
     }
+
+    .single-post #content {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .single-post #sidebar {
+        margin-top: 28px;
+    }
 }
 
 @media screen and (max-width:768px)  {
