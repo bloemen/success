@@ -2591,3 +2591,16 @@ border:1px solid #f3ce19;
         width: 100%;
     }
 }
+
+@media screen and (max-width:1025px)  {
+    #analytics_tab ul.change_tab li span {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width:768px)  {
+    #analytics_tab ul.change_tab li span {
+        font-size: 14px !important;
+    }
+}
+
