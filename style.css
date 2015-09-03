@@ -2294,6 +2294,15 @@ border:1px solid #f3ce19;
     {
         float: none;
     }
+
+    ol.breadcrumb a:active, ol.breadcrumb a:hover {
+        color: transparent;
+        text-shadow: 1px -1px rgb(117,117,117);
+    }
+
+    ol.breadcrumb {
+        padding-bottom: 0;
+    }
 }
 
 /***** max-width: 768px *****/
