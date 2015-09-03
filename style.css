@@ -409,6 +409,10 @@ a:hover .cam_cat
   New Post
  *********************/
 
+#top-newposts {
+    margin-top: 56px;
+}
+
 .content
 {
     min-height: 40em;
@@ -730,13 +734,13 @@ body.category_page .sidebar
 
 /*-- サイド 人気記事 --*/
 .sidebar .side-widget-inner{
-    margin-top:23px;
+    margin-top:0;
 }
 .sidebar .side-widget-inner h4{
     font-family: Trajan;
     font-size: 22px;
     color: #383a3a;
-    margin-top: 46px;
+    margin-top: 0;
     margin-bottom: 24px;
 }
 #analytics_tab ul.change_tab{
