@@ -1500,6 +1500,13 @@ body.page-template-newposts .content
 
     background: rgba(49,49,49,.3);
 }
+
+@media screen and (max-width: 1023px) {
+    .bzb-sns-btn {
+    width: 500px;       
+    }
+}
+
 .bzb-sns-btn:after
 {
     display: block;
