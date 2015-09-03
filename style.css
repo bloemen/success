@@ -1609,6 +1609,15 @@ body.page-template-newposts .content
 
     letter-spacing: .1em;
 }
+
+.box_content h1,
+.box_content h2,
+.box_content h3,
+.box_content h4,
+.box_content h5,
+.box_content h6 {
+    font-weight: bold;
+}
 .box_content ul,
 .box_content ol
 {
