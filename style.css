@@ -2017,6 +2017,12 @@ text-align:left;
 margin:47px 1.08% 0 1.08%;
 }
 
+@media screen and (max-width: 1023px) {
+    #related_block .gr3 {
+        width: 47.5%;
+    }
+}
+
 #related_block .gr3 .inner {
     position: relative;
 }
