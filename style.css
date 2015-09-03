@@ -1083,7 +1083,7 @@ ul.list_category li a .list_category_top_ttl
     clear: both;
 
     height: 302px;
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 0;
 
     text-align: center;
@@ -1091,6 +1091,11 @@ ul.list_category li a .list_category_top_ttl
     border: 0;
     background: url(http://rules-of-success.jp/templates/default/images/footer_bg.gif) repeat left top;
 }
+
+.single-post #footer {
+    margin-top: 60px;
+}
+
 .footer_inner
 {
     height: 302px;
