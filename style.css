@@ -737,6 +737,11 @@ body.category_page .sidebar
 .sidebar .side-widget-inner{
     margin-top:0;
 }
+
+.single-post .side-widget {
+    padding-top: 15px;
+}
+
 .sidebar .side-widget-inner h4{
     font-family: Trajan;
     font-size: 22px;
