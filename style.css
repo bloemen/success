@@ -2417,7 +2417,7 @@ border:1px solid #f3ce19;
     .more_btn
     {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom:20px;
     }
 
     #message_block .message_ttl
@@ -2612,6 +2612,7 @@ border:1px solid #f3ce19;
         float: none;
 
         width: 100%;
+        text-align: center;
     }
 }
 
