@@ -1634,10 +1634,15 @@ body.page-template-newposts .content
     padding-left: 1em;
 
     list-style-position: inside;
-    list-style-type: disc;
+    list-style-type: none;
 
     text-indent: -1em;
 }
+.box_content ul li:before {
+    content: "• ";
+    color: #a89000;
+}
+
 .box_content ol li
 {
     padding-left: 1em;
