@@ -1964,7 +1964,7 @@ body.page-template-newposts .content
     float: left;
 
     margin-right: 14px;
-    padding: 2px 5px;
+    padding: 2px 6px;
 
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
@@ -2056,7 +2056,7 @@ margin:47px 1.08% 0 1.08%;
 
 #related_block .gr3 .inner {
     position: relative;
-    
+
 }
 
 #related_block  .gr3  .inner img {
