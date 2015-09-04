@@ -2612,8 +2612,12 @@ border:1px solid #f3ce19;
         float: none;
 
         width: 100%;
+    }
+    .under_global_menu_r {
         text-align: center;
     }
+
+
 }
 
 @media screen and (max-width:1025px)  {
