@@ -2575,6 +2575,17 @@ border:1px solid #f3ce19;
     .category #content {
         margin-bottom: 0;
     }
+
+    .box_content blockquote {
+        padding-left:21px;
+    }
+
+    .box_content blockquote:before {
+        top: 0px;
+        background-size: 19.6px 15.4px;
+        width: 19.6px;
+        height: 15.4px;
+    } 
 }
 
 /***** max-width: 610px *****/
