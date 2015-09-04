@@ -135,14 +135,14 @@ a:hover
 
 #header #logo
 {
-    font-size: unset;
+    font-size: 14px;
 
-    float: unset;
+    float: none;
 }
 
-#logo
-{
-    margin: unset;
+#header #logo {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header-menu-top
@@ -2346,7 +2346,7 @@ border:1px solid #f3ce19;
     }
     #gnav
     {
-        display: none ;
+        display: none;
 
         height: auto;
     }

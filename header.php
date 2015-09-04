@@ -69,7 +69,7 @@ $logo_image = get_option('logo_image');
   <?php bzb_header_social_buttons();?>
 
 <?php if (has_nav_menu('global_nav')) {?>
-        <div id="header-menu-tog"> <a href="#"><i class="fa fa-align-justify"></i></a></div>
+        <div id="header-menu-tog" class="active"> <a href="#"><i class="fa fa-align-justify"></i></a></div>
 <?php }
 	?>
 
@@ -77,7 +77,7 @@ $logo_image = get_option('logo_image');
 <!---->
 <?php if (has_nav_menu('global_nav')) {
 		?>
-<div id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+<div id="gnav" role="navigation" class="active" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
   <section class="wrapper clearfix" style="display:none">
   <ul>
   <?php
