@@ -47,37 +47,7 @@ wp_nav_menu(
 // }
 ?>
 <?php wp_footer();?>
-<script>
-(function($){
 
-$(function(){
-  <?php if (!wp_is_mobile()) {?>
-  $(".sub-menu").css('display', 'none');
-  $("#gnav-ul li").hover(function(){
-    $(this).children('ul').fadeIn('fast');
-  }, function(){
-    $(this).children('ul').fadeOut('fast');
-  });
-  <?php }
-?>
-  // スマホトグルメニュー
-
-  <?php if (is_front_page()) {?>
-    $('#gnav').addClass('active');
-  <?php } else {?>
-    $('#gnav').removeClass('active');
-
-  <?php }
-?>
-
-
-  $('#header-menu-tog a').click(function(){
-    $('#gnav').toggleClass('active');
-  });
-});
-
-
-})(jQuery);
 
 </script>
 </body>

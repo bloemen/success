@@ -2740,5 +2740,9 @@ border:1px solid #f3ce19;
     #footer ul {
         font-size:  0.625em;
     }
+
+    #header-menu-tog {
+        font-size: 26px;
+    }
 }
 

@@ -15,8 +15,8 @@ jQuery(function($){
 
 $(function(){
   $("#header-menu-tog").on("click", function(){
+    //$(this).toggleClass("active");
     $(this).next().slideToggle();
-    $(this).toggleClass("active");
   });
 });
 });
@@ -77,7 +77,7 @@ $logo_image = get_option('logo_image');
 <!---->
 <?php if (has_nav_menu('global_nav')) {
 		?>
-<div id="gnav" role="navigation" class="active" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+<div id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
   <section class="wrapper clearfix" style="display:none">
   <ul>
   <?php
