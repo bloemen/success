@@ -2377,6 +2377,11 @@ border:1px solid #f3ce19;
         height: 116px;
     }
 
+    #top-slide {
+        padding-left:15px;
+        padding-right:15px;
+    }
+
     .top_list_stock
     {
     }
