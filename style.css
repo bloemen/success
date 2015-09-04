@@ -2575,6 +2575,13 @@ border:1px solid #f3ce19;
         width: 100%;
         height: 148px;
     }
+
+    #top-attention ul li {
+        width: 42.5%;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
 }
 
 /*@media screen and (max-width: 600px) {
@@ -2615,6 +2622,12 @@ border:1px solid #f3ce19;
 @media screen and (max-width:768px)  {
     #analytics_tab ul.change_tab li span {
         font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        margin: 0 12px;
     }
 }
 
