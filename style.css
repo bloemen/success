@@ -2373,8 +2373,8 @@ border:1px solid #f3ce19;
     .thumb_07,
     .top_list_stock dl dt img
     {
-        width: 116px;
-        height: 116px;
+        width: 80px;
+        height: 80px;
     }
 
     #top-slide {
@@ -2396,14 +2396,24 @@ border:1px solid #f3ce19;
     }
     .top_list_stock dl dt
     {
-        width: 130px;
-        height: 130px;
+        width: 92px;
+        height: 92px;
     }
     .top_list_stock dl dd h2
     {
         top: 20px;
+        font-size: 14px;
+    }
+    .top_list_stock dl dd .top_list_date {
+        top: 66px;
+    }
+    .top_list_stock dl dd .top_list_cate {
+        padding-top: 0;
     }
 
+    .sidebar {
+        margin-top: 0px;
+    }
     .more_btn
     {
         width: 80%;
@@ -2580,7 +2590,7 @@ border:1px solid #f3ce19;
         width: 42.5%;
         margin-left: 5px;
         margin-right: 5px;
-        
+
     }
 }
 
