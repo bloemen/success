@@ -1,8 +1,14 @@
 jQuery(function($){
     $setElm = $('.wideslider'); //スライドの対象となる要素名
-    baseWidth = 398; //スライドさせるコンテンツの幅
+    screenwidth = screen.width;
+    if(screenwidth < 399) {
+        baseWidth = screenwidth;
+        minWidth = screenwidth;        
+    } else {
+        baseWidth = 398; //スライドさせるコンテンツの幅
+        minWidth = 398; //コンテンツ要素の最小幅
+    }
     baseHeight = 281; //スライドさせるコンテンツ高さ
-    minWidth = 398; //コンテンツ要素の最小幅
     slideSpeed = 700; //アニメーションスピード
     delayTime = 5000; //アニメーション待機時間
     easing = 'linear'; //イージング効果
