@@ -2688,10 +2688,19 @@ border:1px solid #f3ce19;
         text-align: center;
     }
 
+    .under_global_menu_r img {
+        min-height: 44px;
+        max-height: 100px;
+    }
+
     .bzb-sns-btn {
         width: 100%;
         padding-left: 6.1%;
         padding-right: 6.1%;
+    }
+
+    #under_global_menu .topics_ttl {
+        font-size: 20px;
     }
 
 }
