@@ -1,11 +1,17 @@
 jQuery(function($){
     $setElm = $('.wideslider'); //スライドの対象となる要素名
-    baseWidth = 398; //スライドさせるコンテンツの幅
-    baseHeight = 241; //スライドさせるコンテンツ高さ
-    minWidth = 320; //コンテンツ要素の最小幅
-    slideSpeed = 1500; //アニメーションスピード
+    screenwidth = screen.width;
+    if(screenwidth < 399) {
+        baseWidth = screenwidth;
+        minWidth = screenwidth;        
+    } else {
+        baseWidth = 398; //スライドさせるコンテンツの幅
+        minWidth = 398; //コンテンツ要素の最小幅
+    }
+    baseHeight = 281; //スライドさせるコンテンツ高さ
+    slideSpeed = 700; //アニメーションスピード
     delayTime = 5000; //アニメーション待機時間
-    easing = 'easeOutBack'; //イージング効果
+    easing = 'linear'; //イージング効果
     autoPlay = '1'; // 自動スライドON/OFF (ON=1,OFF=0)
     flickMove = '1'; // フリック動作ON/OFF (ON=1,OFF=0)
     btnOpacity = 0.5; //左右のNEXT/BACKの透過
@@ -68,7 +74,7 @@ jQuery(function($){
  
                 setWidth = findList.find('img').width();
                 setHeight = findList.find('img').height();
-                baseWrapWidth = (setWidth)*(baseListCount);
+                baseWrapWidth = ((setWidth)+1)*(baseListCount);
  
                 ulCount = findWrap.find('ul').length;
                 if(ulCount == 1){
@@ -81,7 +87,7 @@ jQuery(function($){
  
                     allListCount = findWrap.find('li').length;
                 }
-                allLWrapWidth = (setWidth)*(allListCount),
+                allLWrapWidth = ((setWidth)+1)*(allListCount),
                 posAdjust = ((windowWidth)-(setWidth))/2;
  
                 findBase.css({left:(posAdjust),width:(setWidth),height:(setHeight)});

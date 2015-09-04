@@ -1,0 +1,678 @@
+@charset 'UTF-8';
+/*
+Theme Name:     成功の法則
+Theme URI:      http://rules-of-success.jp
+Description:    成功の法則ワードプレスベーステーマ
+Author:         ROS
+Author URI:     http://rules-of-success.jp
+Template:       xeory
+Version:        0.1.0
+*/
+
+/*********************
+  initialize
+ *********************/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+iframe,
+img,
+ins,
+input,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video
+{
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+    outline: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary
+{
+    display: block;
+}
+
+blockquote,
+q
+{
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+}
+
+legend
+{
+    max-width: 100%;
+}
+
+li
+{
+    list-style: none;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+button,
+input,
+select,
+textarea
+{
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes fade
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes rotate
+{
+    from
+    {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate
+{
+    from
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes scale
+{
+    from
+    {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    to
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes scale
+{
+    from
+    {
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+    }
+    to
+    {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+/*********************
+  共通部分
+ *********************/
+
+body.home #content
+{
+    padding-top: 0;
+}
+
+.wrapper_body
+{
+    /*min-width: 80em; */
+}
+
+.mainList li a,
+#top-attention ul li a,
+#content .top_list_stock .article-inner a,
+.tags_list .list_category li a,
+.category #content .category_list_stock a,
+.page-template-newposts #content .category_list_stock a,
+.single-post #related_block .gr3 a 
+{
+    display: block;
+
+    -webkit-transition: -webkit-filter .8s;
+       -moz-transition:    -moz-filter .8s;
+            transition:         filter .8s;
+
+    -webkit-filter: grayscale(100%);
+            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale');
+            filter: gray;
+}
+.mainList li a:hover,
+#top-attention ul li a:hover,
+#content .top_list_stock .article-inner a:hover,
+.tags_list .list_category li a:hover,
+.category #content .category_list_stock a:hover,
+.page-template-newposts #content .category_list_stock a:hover,
+.single-post #related_block .gr3 a:hover
+{
+    -webkit-filter: grayscale(0%);
+            filter: none;
+            filter: none;
+}
+
+.bottom
+{
+    padding: 2em 0;
+
+    text-align: center;
+
+    text-shadow: 0 1px rgba(255,255,255,.8);
+}
+.bottom,
+.bottom a
+{
+    color: #999;
+}
+.bottom a:hover
+{
+    text-decoration: underline;
+}
+
+
+.footer
+{
+    margin-top: 5em;
+    padding: 2.5em 0;
+
+    border: solid #a5a5a5;
+    border-width: 1px 0;
+    background: #b9b9b9;
+    background: linear-gradient(#ccc,#b9b9b9);
+    box-shadow: 0 4px 4px rgba(0,0,0,.05);
+}
+
+#footer a
+{
+    color: #adadad;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.breadcrumb li
+{
+    /*margin-left: unset;*/
+    line-height: normal;
+
+    float: none;
+}
+
+.breadcrumb
+{
+    line-height: normal;
+
+    margin-bottom: 0;
+}
+/**********************
+  Global Navigation (Xeory unset)
+ **********************/
+#gnav
+{
+    font-size: 14px;
+
+    margin-top: 0;
+
+    border-top: none;
+    border-bottom: none;
+    background: none;
+}
+
+#gnav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#gnav li
+{
+    position: static;
+
+    float: none;
+
+    padding: 0;
+}
+
+#gnav li a
+{
+    display: inline;
+
+    margin-top: 0;
+    padding: 0;
+
+    -webkit-transition: none;
+            transition: none;
+    text-decoration: none;
+
+    color: rgb(150,110,0);
+    border-top: none;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgba(0, 0, 0, 0);
+background-image: none;
+background-origin: padding-box;
+background-size: auto;
+}
+
+#gnav li a:hover
+{
+    border: none;
+}
+
+#gnav li.current-menu-item a {
+    border-top: none;
+}
+
+/* ----------------------------------------
+* レスポンシブ
+* ~ / 1200px / 991px / 767px 
+* desctop / laptop / tablet / phone
+---------------------------------------- */
+@media screen and (max-width: 1200px)
+{
+    /* laptop */
+    .wrap,
+    .one-column #content .wrap
+    {
+        width: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .main-inner
+    {
+        box-sizing: border-box;
+        margin-right: 320px;
+    }
+
+    /* laptop end */
+}
+@media screen and (max-width: 991px)
+{
+    /* tablet */
+/*    .wrap,
+    .one-column #content .wrap
+    {
+        margin-right: unset;
+        margin-left: unset;
+    }
+*/
+/*    #main,
+    .main-inner,
+    #side
+    {
+        float: unset;
+
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+*/
+/*    .left-content #main,
+    .right-content #main
+    {
+        float: unset;
+    }*/
+/*    .left-content .main-inner,
+    .right-content .main-inner
+    {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+    .left-content #side,
+    .right-content #side
+    {
+        float: unset;
+
+        width: unset;
+        margin: unset;
+    }*/
+
+/*    #side
+    {
+        padding-top: unset;
+    }*/
+
+    #header
+    {
+        padding: 0 !important;
+    }
+
+    #header-menu-tog
+    {
+/*        font-size: unset;
+*/
+        display: none;
+        /*float: unset;*/
+    }
+
+    #gnav
+    {
+        display: inline;
+    }
+    #gnav.active
+    {
+        display: inline-block;
+    }
+
+    #gnav
+    {
+        margin: 0;
+        /*padding: 0;*/
+        padding-top:26px;
+
+        border: none;
+    }
+    #gnav .wrap
+    {
+        margin: 12px;
+    }
+    #gnav ul li
+    {
+        position: static;
+
+        float: none;
+
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    #gnav ul li.current-menu-item a
+    {
+        border-top: none;
+        background: none;
+    }
+    #gnav ul li a
+    {
+        display: inline;
+
+        padding: 0;
+
+        -webkit-transition: none;
+                transition: none;
+        text-decoration: none;
+
+        color: rgb(150,110,0);
+        border-top: none;
+        border-bottom: none;
+        background: none;
+    }
+    #gnav ul li a:hover
+    {
+        color: #966f00;
+        border-top: none;
+    }
+/*    #gnav ul li a:hover .sub-menu
+    {
+        display: inline;
+    }
+    #gnav ul li .sub-menu
+    {
+        position: static;
+
+        display: inline;
+
+        width: 100%;
+        margin-left: unset;
+
+        border: unset;
+        border-bottom: unset;
+        background: unset;
+    }
+    #gnav ul li .sub-menu li
+    {
+        float: unset;
+
+        margin-right: unset;
+    }
+    #gnav ul li .sub-menu li:list-child
+    {
+        border-bottom: unset;
+    }
+    #gnav ul li .sub-menu li a
+    {
+        padding: unset;
+
+        color: unset;
+        border-bottom: unset;
+        background: unset;
+    }
+    #gnav ul li .sub-menu li a:hover
+    {
+        color: unset;
+        background: unset;
+        box-shadow: unset;
+    }
+    #gnav ul li .sub-menu .sub-menu
+    {
+        top: unset;
+        left: unset;
+    }
+*/    /* tablet end */
+}
+@media screen and (max-width: 767px)
+{
+    /* phone */
+/*    .wrap,
+    .one-column #content .wrap
+    {
+        margin-right: unset;
+        margin-left: unset;
+    }*/
+
+    /* phone end */
+}
+
+/*********************
+  Sidebar
+ *********************/
+.sidebar .box_extra
+{
+    padding: 1em 1.5em;
+
+    border-radius: 0 0 .125em .125em;
+    background: #eee;
+}
+.sidebar .box_extra a
+{
+    text-decoration: underline;
+}
+
+.grid,
+.grid_space
+{
+    float: left;
+}
+.grid + .grid:last-child,
+.grid_space + .grid_space:last-child
+{
+    float: right;
+}
+
+.grid_space > a,
+.grid_space > blockquote,
+.grid_space > button,
+.grid_space > code,
+.grid_space > div,
+.grid_space > dl,
+.grid_space > fieldset,
+.grid_space > form,
+.grid_space > h1,
+.grid_space > h2,
+.grid_space > h3,
+.grid_space > h4,
+.grid_space > h5,
+.grid_space > h6,
+.grid_space > hr,
+.grid_space > img,
+.grid_space > ol,
+.grid_space > p,
+.grid_space > table,
+.grid_space > ul,
+.line_space
+{
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.s2o7
+{
+    width: 28.58%;
+}
+
+/**********************
+  フォント
+ **********************/
+@font-face
+{
+    font-family: Trajan;
+
+    src: url(fonts/TrajanPro-Regular.woff) format('woff');
+}
+@font-face
+{
+    font-family: Trajan_b;
+
+    src: url(fonts/TrajanPro-Bold.woff) format('woff');
+}
