@@ -1642,6 +1642,10 @@ body.page-template-newposts .content
     content: "• ";
     color: #a89000;
 }
+.box_content ul.bzb-sns-btn li:before {
+    content: "";
+}
+
 
 .box_content ol li
 {
